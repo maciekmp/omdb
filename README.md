@@ -1,4 +1,5 @@
 # OMDB
+https://omdb-ten.vercel.app/
 
 Things included inside the app:
 * typescript with basic types
