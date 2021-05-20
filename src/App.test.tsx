@@ -16,7 +16,7 @@ const response = {
 };
 
 const server = setupServer(
-  rest.get('http://www.omdbapi.com/*', (req, res, ctx) => {
+  rest.get('https://www.omdbapi.com/*', (req, res, ctx) => {
     return res(ctx.json(response));
   }),
 );

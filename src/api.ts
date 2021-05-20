@@ -14,7 +14,7 @@ export const search = (query: string) => {
     source.cancel();
   }
   cancelSource = CancelToken.source();
-  return axios.get<Response>(`http://www.omdbapi.com/?apikey=2591b2c&s=${query}`, {
+  return axios.get<Response>(`https://www.omdbapi.com/?apikey=2591b2c&s=${query}`, {
     cancelToken: cancelSource.token,
   })
     .then(response => {
